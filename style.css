@@ -1,0 +1,794 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --color-primary: #242125;
+  --color-secondary: #7f787a;
+
+  --font-body: "Poppins", sans-serif;
+  --font-heading: "Sofia Pro", sans-serif;
+}
+
+* {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+/* navbar */
+.navbar__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr;
+  gap: 0px 0px;
+  align-items: center;
+  justify-items: start;
+  grid-auto-flow: row;
+  grid-template-areas: "navbar__img--logo navbar__menu navbar__menu navbar__menu navbar__menu navbar__singup";
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  padding: 0 5px;
+}
+
+.navbar__img--logo {
+  grid-area: navbar__img--logo;
+  width: 50%;
+  padding-inline-start: 25px;
+}
+
+.navbar__menu {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "navbar__menu--links navbar__menu--links2 navbar__menu--links3 navbar__menu--links4 navbar__menu--links5";
+  grid-area: navbar__menu;
+
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar__menu--links {
+  grid-area: navbar__menu--links;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.navbar__menu--links > a {
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar__menu--links2 {
+  grid-area: navbar__menu--links2;
+}
+
+.navbar__menu--links3 {
+  grid-area: navbar__menu--links3;
+}
+
+.navbar__menu--links4 {
+  grid-area: navbar__menu--links4;
+}
+
+.navbar__menu--links5 {
+  grid-area: navbar__menu--links5;
+}
+
+.navbar__singup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    "navbar__singup--title navbar__button"
+    "navbar__singup--title navbar__button";
+  grid-area: navbar__singup;
+}
+
+.navbar__singup--title {
+  grid-area: navbar__singup--title;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.navbar__button {
+  grid-area: navbar__button;
+}
+
+.cta {
+  font-size: 1rem;
+  border: 2px solid #242125;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+  height: fit-content;
+  padding: 5px 14px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #242125;
+  color: #fff;
+  transition: 1s;
+}
+
+/*header and brand*/
+.hero__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header__container header__container header__container header__container header__container"
+    "brand__container brand__container brand__container brand__container brand__container";
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1.2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "hero__copy hero__img hero__img"
+    "hero__copy hero__img hero__img"
+    "hero__copy hero__img hero__img";
+  grid-area: header__container;
+  height: auto;
+}
+
+.hero__copy {
+  grid-area: hero__copy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-area: hero__copy;
+  padding: 0 0 0 50px;
+}
+.hero__info,
+.brand__info {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  text-transform: capitalize;
+}
+.hero__title,
+.brand__title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.hero__img {
+  grid-area: hero__img;
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22192743/TWICE-Jeongyeon-7.jpg);
+  background-position: -4px 25%;
+  background-size: cover;
+  border-radius: 0px 0px 350px 350px;
+  width: 85%;
+  height: 80vh;
+  right: 0;
+  margin-left: 15%;
+}
+
+.brand__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "brand__img brand__copy brand__copy"
+    "brand__img brand__copy brand__copy"
+    "brand__img brand__copy brand__copy";
+  grid-area: brand__container;
+  padding-right: 100px;
+}
+
+.brand__copy {
+  grid-area: brand__copy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.brand__img {
+  grid-area: brand__img;
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22192716/TWICE-Jeongyeon-5.jpg);
+  background-size: cover;
+  background-position: 25% 0;
+  margin: 10px;
+  border: 6px double #000;
+  border-radius: 200px;
+  background-repeat: no-repeat;
+  width: 18rem;
+  margin-left: 50px;
+}
+
+.brand__paragraph {
+  line-height: 150%;
+}
+
+.brand__button,
+.hero__button {
+  margin-top: 10px;
+}
+/* collection*/
+
+.collection__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  align-items: center;
+  grid-template-areas:
+    "collection__logo collection__logo collection__logo collection__logo"
+    "collection__logo collection__logo collection__logo collection__logo"
+    "collection__img--container collection__img--container collection__img--container collection__img--container"
+    "collection__img--container collection__img--container collection__img--container collection__img--container";
+  background: black;
+  padding: 0 5% 5% 5%;
+  margin-top: 150px;
+}
+
+.collection__logo {
+  grid-area: collection__logo;
+}
+.logo__claire {
+  width: 8rem;
+  margin: 0;
+}
+.collection__copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.collection__title,
+.collection__more,
+.newcollection__title,
+.newcollection__more {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  font-weight: 100;
+  width: 450px;
+  color: white;
+  margin: 0;
+}
+
+.collection__more,
+.newcollection__more {
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: fit-content;
+}
+
+.collection__img--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "collection__img collection__img-2 collection__img-3 collection__img-4"
+    "collection__img collection__img-2 collection__img-3 collection__img-4"
+    "collection__img collection__img-2 collection__img-3 collection__img-4";
+  grid-area: collection__img--container;
+  height: 53vh;
+}
+
+.collection__img {
+  grid-area: collection__img;
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22192731/TWICE-Jeongyeon-6.jpg);
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.collection__img-2 {
+  grid-area: collection__img-2;
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220801/twice-jeongyeon-5.jpeg);
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.collection__img-3 {
+  grid-area: collection__img-3;
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220903/twice-jeongyeon-2.jpeg);
+  background-size: cover;
+  background-position-y: 100%;
+}
+
+.collection__img-4 {
+  grid-area: collection__img-4;
+  background-image: url(https://6.viki.io/image/377bab90423146c6863a2286eb89a6d9.jpeg?s=900x600&e=t);
+  background-size: cover;
+}
+
+/* gift */
+
+.gift__container {
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220737/twice-jeongyeon-61.jpg);
+  background-size: cover;
+  height: 75vh;
+  background-position-y: 50%;
+}
+
+.gift__copy {
+  background: #00000090;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25%;
+}
+.gift__info,
+.discount__info {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: var(--font-heading);
+}
+.gift__title,
+.discount__title {
+  font-size: 6em;
+  font-family: var(--font-heading);
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.gift__paragraph,
+.discount__paragraph {
+  color: white;
+  font-weight: 200;
+  font-family: var(--font-heading);
+  font-size: 1.1em;
+  text-align: center;
+}
+.gift__button,
+.discount__button {
+  border: 2px #fff solid;
+  color: white;
+  font-weight: 100;
+}
+/* newcollection */
+.newcollection__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "newcollection__copy newcollection__copy newcollection__copy newcollection__copy"
+    "newcollection__img--container newcollection__img--container newcollection__img--container newcollection__img--container"
+    "newcollection__img--container newcollection__img--container newcollection__img--container newcollection__img--container";
+  background: rgb(255, 255, 255);
+  padding: 5% 5% 5% 5%;
+}
+
+.newcollection__copy {
+  grid-area: newcollection__copy;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newcollection__img--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "newcollection__img newcollection__img-2 newcollection__img-3 newcollection__img-4"
+    "newcollection__img newcollection__img-2 newcollection__img-3 newcollection__img-4"
+    "bubble__container bubble__container bubble__container bubble__container";
+  grid-area: newcollection__img--container;
+  height: 53vh;
+}
+
+.newcollection__img {
+  grid-area: newcollection__img;
+}
+
+.newcollection__img-2 {
+  grid-area: newcollection__img-2;
+}
+
+.newcollection__img-3 {
+  grid-area: newcollection__img-3;
+}
+
+.newcollection__img-4 {
+  grid-area: newcollection__img-4;
+}
+.newcollection__title,
+.newcollection__more {
+  color: #000;
+}
+
+.bubble__container {
+  grid-area: bubble__container;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.point__carrousel {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4e4e4e;
+}
+
+.point__carrousel:hover {
+  background: #000;
+}
+/* discount */
+.discount__container {
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22193013/TWICE-Jeongyeon-3.jpg);
+  background-size: cover;
+  height: 75vh;
+  background-position-y: 50%;
+}
+.discount__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 55% 50px 50px;
+  background: #00000090;
+}
+.discount__title {
+  font-size: 2em;
+}
+.discount__title--bold {
+  font-size: 2.5em;
+}
+
+.discount__paragraph {
+  padding: 0 15%;
+}
+/* shopnow */
+.shopnow__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "logo_simple shopnow__copy shopnow__copy shopnow__button"
+    "logo_simple shopnow__copy shopnow__copy shopnow__button";
+  margin: 50px 100px;
+  background: #f6f4f7;
+  padding: 5vh;
+  align-items: baseline;
+  justify-items: center;
+}
+
+.logo__simple {
+  grid-area: logo_simple;
+  width: 75%;
+  min-width: 100px;
+}
+
+.shopnow__copy {
+  grid-area: shopnow__copy;
+}
+.shopnow__title {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.shopnow__pragraph {
+  line-height: 150%;
+  font-size: 0.85rem;
+}
+.shopnow__button {
+  grid-area: shopnow__button;
+}
+
+/* footer */
+.footer__container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  gap: 0px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "footer__direction footer__redirect footer__redirect newsletter__container"
+    "footer__direction footer__redirect footer__redirect newsletter__container"
+    "footer__direction footer__redirect footer__redirect newsletter__container"
+    "footer__copyright footer__copyright footer__copyright footer__copyright";
+  padding: 10% 5% 0 5%;
+  align-items: start;
+  justify-items: center;
+  background: #171719;
+}
+
+.footer__direction {
+  grid-area: footer__direction;
+}
+
+.footer__redirect {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 50px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "redirect__contain--help redirect__contain--company"
+    "redirect__contain--help redirect__contain--company"
+    "redirect__contain--help redirect__contain--company";
+  grid-area: footer__redirect;
+}
+
+.direction__copy {
+  font-weight: 100;
+  color: #fff;
+  font-family: var(--font-heading);
+  text-transform: capitalize;
+}
+
+.redirect__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-transform: capitalize;
+}
+.redirect__vinculo {
+  font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-heading);
+}
+
+.redirect__vinculo:hover {
+  color: #7f787a;
+}
+
+.redirect__title,
+.newsletter__title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.redirect__contain--help {
+  grid-area: redirect__contain--help;
+}
+
+.redirect__contain--company {
+  grid-area: redirect__contain--company;
+}
+.newsletter__container {
+  grid-area: newsletter__container;
+}
+
+.newsletter__paragraph,
+.input__paragraph {
+  font-weight: 100;
+  color: #fff;
+  font-family: var(--font-heading);
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+.newsletter__input {
+  padding: 5px;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  width: 100%;
+  border: none;
+  height: 30px;
+}
+
+.newsletter__button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 0.75rem;
+}
+.input__radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.input__paragraph {
+  font-size: 0.8rem;
+}
+.footer__copyright {
+  grid-area: footer__copyright;
+  width: 100%;
+  border-top: 1px white solid;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer__copyright > p {
+  font-family: var(--font-heading);
+  font-weight: 100;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 950px) {
+  .navbar__container {
+    display: none;
+  }
+
+  .header__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    justify-items: center;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "hero__img"
+      "hero__copy";
+  }
+  .hero__container {
+    grid-template-rows: max-content max-content;
+    gap: 50px 0;
+    justify-items: center;
+  }
+  .hero__img {
+    grid-area: hero__img;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .hero__copy {
+    grid-area: hero__copy;
+    padding: 0 25px;
+  }
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .brand__container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "brand__img"
+      "brand__copy";
+      padding: 0;
+      justify-items: center;
+  }
+  
+  .brand__img { grid-area: brand__img; 
+  height: 22rem;}
+  
+  .brand__copy { grid-area: brand__copy;
+  padding: 0 25px 100px 25px; }
+  
+  .brand__title {
+    font-size: 2.5rem;
+  }
+  .collection__container{
+    margin-top: 0;
+  }
+
+  .collection__img--container{  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "collection__img collection__img-2"
+      "collection__img-3 collection__img-4";
+  }
+  
+  .collection__img { grid-area: collection__img; }
+  
+  .collection__img-2 { grid-area: collection__img-2; }
+  
+  .collection__img-3 { grid-area: collection__img-3; }
+  
+  .collection__img-4 { grid-area: collection__img-4; }
+  
+
+  
+  .collection__title,
+  .newcollection__title {
+    font-size: 2rem;
+    width: 350px;
+  }
+  .collection__more,
+  .newcollection__more {
+    font-size: 1rem;
+  }
+
+
+  .shopnow__container {
+    margin: 50px 15px;
+  }
+  .gift__title {
+    font-size: 4em;
+  }
+
+  .discount__title--bold {
+    font-size: 1.5em;
+  }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr 0.5fr;
+    gap: 25px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "newsletter__container newsletter__container"
+      "footer__redirect footer__redirect"
+      "footer__direction footer__direction"
+      "footer__copyright footer__copyright";
+    align-items: center;
+    justify-items: center;
+  }
+
+  .newsletter__container {
+    grid-area: newsletter__container;
+  }
+
+  .footer__redirect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "redirect__contain--help redirect__contain--company"
+      "redirect__contain--help redirect__contain--company";
+    grid-area: footer__redirect;
+  }
+
+  .redirect__contain--company {
+    grid-area: redirect__contain--company;
+  }
+
+  .redirect__contain--help {
+    grid-area: redirect__contain--help;
+  }
+
+  .footer__direction {
+    grid-area: footer__direction;
+  }
+
+  .footer__copyright {
+    grid-area: footer__copyright;
+  }
+}
