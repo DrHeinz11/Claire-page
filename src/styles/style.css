@@ -1,0 +1,82 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.cta {
+  font-family: "Poppins", Inter;
+  font-size: 1rem;
+  border: 2px solid #242125;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: #242125;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.navbar__link {
+  font-family: "Poppins", Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  border: 2px solid transparent;
+  padding: 0.25rem 0.5rem;
+}
+.navbar__link:hover {
+  border: 2px solid #000;
+}
+
+.heading__section {
+  font-family: "Sofia Pro", Arial;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: start;
+  color: #fff;
+}
+
+.heading__section--black {
+  color: #000;
+}
+
+.paragraph {
+  font-size: 0.75rem;
+  font-family: "Poppins", Inter;
+  text-align: start;
+  word-break: break-word;
+  color: #242125;
+}
+
+.section__title {
+  font-family: "Sofia Pro", Arial;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: start;
+  word-break: break-word;
+}
+
+.section__title--black {
+  color: #000;
+}
+
+.section__title--white {
+  color: #fff;
+}
+
+.section__title--subtitle {
+  font-family: "Poppins", Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  word-break: break-word;
+  text-align: start;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
