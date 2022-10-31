@@ -1,0 +1,21 @@
+@import url("http://fonts.cdnfonts.com/css/sofia-pro");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.cta {
+  font-family: "Poppins", Inter;
+  font-size: 1rem;
+  border: 2px solid #242125;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cta:hover {
+  background-color: #242125;
+  color: #fff;
+  transition: 0.25s;
+}/*# sourceMappingURL=style.css.map */

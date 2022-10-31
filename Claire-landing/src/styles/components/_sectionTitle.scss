@@ -1,0 +1,24 @@
+.section__title {
+  font-family: $font-heading;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: start;
+  word-break: break-word;
+}
+
+.section__title--black {
+  color: #000;
+}
+.section__title--white {
+  color: #fff;
+}
+
+.section__title--subtitle {
+  font-family: $font-body;
+  font-size: 1rem;
+  font-weight: 400;
+  word-break: break-word;
+  text-align: start;
+  text-transform: capitalize;
+}
