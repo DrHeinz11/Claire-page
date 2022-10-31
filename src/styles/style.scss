@@ -4,6 +4,8 @@ $primary-gray: #7f787a;
 //base
 @import "./base/mediaQuery";
 @import "./base/typography";
+@import "./base/img";
+@import "./base/divider";
 
 //components
 @import "./components/cta";
@@ -11,6 +13,7 @@ $primary-gray: #7f787a;
 @import "./components/heading";
 @import "./components/paragraph";
 @import "./components/sectionTitle";
+@import "./components/container";
 
 //pages
 

@@ -1,5 +1,14 @@
 @import url("http://fonts.cdnfonts.com/css/sofia-pro");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
 .cta {
   font-family: "Poppins", Inter;
   font-size: 1rem;
@@ -48,7 +57,7 @@
 }
 
 .paragraph {
-  font-size: 0.75rem;
+  font-size: 1.15rem;
   font-family: "Poppins", Inter;
   text-align: start;
   word-break: break-word;
@@ -74,9 +83,19 @@
 
 .section__title--subtitle {
   font-family: "Poppins", Inter;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   word-break: break-word;
   text-align: start;
   text-transform: capitalize;
+}
+
+.main__container {
+  padding: 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 0 2rem;
 }/*# sourceMappingURL=style.css.map */
