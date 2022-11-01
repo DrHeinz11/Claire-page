@@ -23,23 +23,27 @@ const Collection = (props: Props) => {
       }
       return { init: prev.init + 4, last: prev.last + 4 }
     })
-
   }
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleSlices('next')
+  //   }, 6000)
+  //   return () => clearInterval(interval)
+  // }, [])
   return (
-    <section className="collection__container main__container">
-      <div className="collection__logo">
-        <img src="accets/logo-claire-simple.svg" alt="" className="logo__claire" />
-        <div className="collection__copy">
-          <h2 className="collection__title heading__section">new collection in our brands</h2>
-          <a href="" className="collection__more cta">see all</a>
-        </div>
+    <section className="collection__container ">
+      <div className="collection__copy">
+        <h2 className="collection__title">new collection in our brands</h2>
+        <button className="collection__more">see all</button>
       </div>
 
       <div className="collection__img--container img__carrousel" >
         {dataSlice.map(element => <img className="img__item--carrousel" src={element.imgUrl} alt={element.imgAlt} key={element.imgAlt} />)}
       </div >
-      <button className="img__carrousel--cta" onClick={() => handleSlices('prev')}>{`<`}</button>
-      <button className="img__carrousel--cta" onClick={() => handleSlices('next')}>{`>`}</button>
+      <div className="collection__button--slider">
+        <button className="img__carrousel--cta" onClick={() => handleSlices('prev')}>{`<`}</button>
+        <button className="img__carrousel--cta" onClick={() => handleSlices('next')}>{`>`}</button>
+      </div>
     </section >
   )
 }
