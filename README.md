@@ -1,8 +1,8 @@
 # Claire-page (ReDesing-Claire-page)
 
 ## Demo link:
-
-Access my site at [Claire-page](https://claire-page.netlify.app/)
+¡Aplication in progress!
+Check demo version in [Claire-demo](https://claire-page-demo.netlify.app/)
 
 ## Table of Content:
 
