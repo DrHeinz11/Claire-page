@@ -1,19 +1,32 @@
 .brand__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   gap: 5rem;
   padding: 0.5rem 1rem;
   max-width: 100%;
   min-height: 100vh;
-  margin-top: 4rem;
-  @include lt-sm{
-    gap: 2.5rem;
+  margin: 6rem 0;
+  @include lt-sm {
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+  .img__brand--header {
+    max-width: 25rem;
+    border: 2px solid #acc999;
+    padding: 0.5rem;
+    border-radius: 20rem;
+    @include lt-sm {
+      max-width:15rem;
+    }
   }
   .brand__copy {
     display: flex;
     flex-direction: column;
-    max-width: 375px;
-    gap:1rem;
+    max-width: 575px;
+    gap: 1rem;
+    @include lt-sm {
+      max-width: 100%;
+    }
   }
 }

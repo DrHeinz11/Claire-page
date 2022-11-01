@@ -37,7 +37,7 @@ const Collection = (props: Props) => {
         <button className="collection__more">see all</button>
       </div>
 
-      <div className="collection__img--container img__carrousel" >
+      <div className="collection__carrousel--container" >
         {dataSlice.map(element => <img className="img__item--carrousel" src={element.imgUrl} alt={element.imgAlt} key={element.imgAlt} />)}
       </div >
       <div className="collection__button--slider">

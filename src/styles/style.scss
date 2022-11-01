@@ -9,14 +9,12 @@ $primary-gray: #9997a2;
 @import "./base/divider";
 
 //components
+@import "./components/navbar";
 @import "./components/cta";
-@import "./components/navbar.link";
-@import "./components/navbar.img";
 @import "./components/heading";
 @import "./components/paragraph";
 @import "./components/sectionTitle";
 @import "./components/container";
-@import "./components/imgItemCarrousel";
 @import "./components/collection";
 @import "./components/brand";
 
