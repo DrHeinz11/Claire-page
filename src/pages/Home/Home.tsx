@@ -6,8 +6,7 @@ const Home = () => {
       <header className='container'>
         <Hero />
       </header>
-      <hr />
-      <main className='main__container'>
+      <main>
         <Brand />
         <Collection />
         <Gift />

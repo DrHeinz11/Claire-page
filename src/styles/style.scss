@@ -1,5 +1,6 @@
 $primary-dark: #242125;
 $primary-gray: #7f787a;
+$primary-gray: #9997a2;
 
 //base
 @import "./base/mediaQuery";
@@ -10,13 +11,15 @@ $primary-gray: #7f787a;
 //components
 @import "./components/cta";
 @import "./components/navbar.link";
+@import "./components/navbar.img";
 @import "./components/heading";
 @import "./components/paragraph";
 @import "./components/sectionTitle";
 @import "./components/container";
+@import "./components/imgItemCarrousel";
 
 //pages
 
-
 //layout
 
+@import "./layout/imgCarrousel";

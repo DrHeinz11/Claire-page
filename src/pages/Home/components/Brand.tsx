@@ -4,8 +4,8 @@ type Props = {}
 const Brand = (props: Props) => {
   return (
     <>
-      <section>
-        <img src="https://0.soompi.io/wp-content/uploads/2019/10/22192716/TWICE-Jeongyeon-5.jpg" alt="jeongyeon" />
+      <section className="main__container">
+        <img className='img__brand--header' src="https://kpopping.com/documents/9f/4/800/BLACKPINK-Jisoo-for-Marie-Claire-Korea-September-2022-Issue-documents-2(1).jpeg?v=2ab59" alt="Jisoo-Collection" />
         <article className="brand__copy">
           <p className="brand__info section__title--subtitle">our brands history</p>
           <h2 className="brand__title section__title"> the philosophy of claire</h2>
@@ -13,7 +13,7 @@ const Brand = (props: Props) => {
             suscipit autem enim
             neque?
           </p>
-          <br/>
+          <br />
           <p className='paragraph'>Quod dolorem, voluptatum, asperiores unde, nulla assumenda odit
 
             inventore similique aperiam quas sequi

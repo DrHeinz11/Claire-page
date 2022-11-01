@@ -1,0 +1,14 @@
+.img__item--carrousel {
+  object-fit: cover;
+  object-position: center;
+  height: -webkit-fill-available;
+  aspect-ratio: 0.75;
+  filter: grayscale(0.5);
+}
+
+.img__brand--header {
+  max-width:30rem;
+  border-radius: 20rem;
+  padding: 8px;
+  border: 2px solid #fcf7e7;
+}
