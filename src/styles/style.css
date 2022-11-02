@@ -253,7 +253,7 @@ hr {
   -o-object-position: center;
      object-position: center;
   aspect-ratio: 0.75;
-  filter: grayscale(0.5);
+  filter: grayscale(0.15);
 }
 .collection__container .collection__images--wrapper .collection__carrousel--container .img__item--position {
   -o-object-position: top;
