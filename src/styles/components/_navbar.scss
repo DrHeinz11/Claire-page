@@ -6,9 +6,10 @@
   .img__navbar--header {
     position: absolute;
     object-fit: cover;
-    object-position: 0 12rem;
-    height: 450px;
-    border-radius: 0 0 14rem 14rem;
+    object-position: center 20rem;
+    height: 50rem;
+    max-width: 40rem;
+    border-radius: 0 0 22rem 22rem;
     z-index: 1;
   }
   .navbar__links--container {

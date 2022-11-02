@@ -1,0 +1,48 @@
+.gift__container {
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220737/twice-jeongyeon-61.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  @include lt-sm {
+    background-position: 0;
+  }
+  .gift__copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    height: 100%;
+    @include lt-sm {
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gift__heading--sub {
+      font-weight: 300;
+      font-family: $font-body;
+    }
+    .gift__heading--title {
+      font-size: 4rem;
+      font-weight: 500;
+      font-family: $font-heading;
+    }
+    .gift__copy--paragraph {
+      max-width: 50rem;
+      font-family: $font-body;
+      text-transform: capitalize;
+    }
+    .gift__button {
+      @include lt-sm {
+        min-width: 10rem;
+      }
+      min-width: 25rem;
+      color: #fff;
+      border-color: #fff;
+    }
+  }
+}

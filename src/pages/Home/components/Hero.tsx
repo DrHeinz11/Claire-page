@@ -4,7 +4,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="header__container">
+    <div className="hero__container">
       <div className="hero__copy">
         <h3 className="hero__info section__title--subtitle">collection 2022</h3>
         <h1 className="hero__title section__title">new product arrived</h1>

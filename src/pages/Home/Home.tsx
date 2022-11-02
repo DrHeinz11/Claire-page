@@ -3,7 +3,7 @@ import { Brand, Collection, Discount, Gift, Hero, NewCollectionBrands, ShopNow }
 const Home = () => {
   return (
     <>
-      <header className='container'>
+      <header>
         <Hero />
       </header>
       <main className='main__container'>

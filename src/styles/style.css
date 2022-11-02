@@ -17,10 +17,11 @@ hr {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 12rem;
-     object-position: 0 12rem;
-  height: 450px;
-  border-radius: 0 0 14rem 14rem;
+  -o-object-position: center 20rem;
+     object-position: center 20rem;
+  height: 50rem;
+  max-width: 40rem;
+  border-radius: 0 0 22rem 22rem;
   z-index: 1;
 }
 .navbar__container .navbar__links--container {
@@ -136,11 +137,6 @@ hr {
   gap: 2rem;
   max-width: 100%;
   width: 100%;
-}
-
-.container {
-  margin-top: 12.5rem;
-  padding: 0 2rem;
 }
 
 .collection__container {
@@ -315,11 +311,76 @@ hr {
 }
 
 .hero__container {
+  margin-top: 24rem;
+  padding: 0 1rem;
+}
+.hero__container .hero__copy {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1rem;
+  max-width: 50%;
 }
+@media screen and (max-width: 959px) {
+  .hero__container .hero__copy {
+    max-width: 100%;
+  }
+}
+.gift__container {
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220737/twice-jeongyeon-61.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (max-width: 599px) {
+  .gift__container {
+    background-position: 0;
+  }
+}
+.gift__container .gift__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.56);
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  height: 100%;
+}
+@media screen and (max-width: 599px) {
+  .gift__container .gift__copy {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+.gift__container .gift__copy .gift__heading--sub {
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+.gift__container .gift__copy .gift__heading--title {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Montserrat", Arial;
+}
+.gift__container .gift__copy .gift__copy--paragraph {
+  max-width: 50rem;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.gift__container .gift__copy .gift__button {
+  min-width: 25rem;
+  color: #fff;
+  border-color: #fff;
+}
+@media screen and (max-width: 599px) {
+  .gift__container .gift__copy .gift__button {
+    min-width: 10rem;
+  }
+}
+
 .img__carrousel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
