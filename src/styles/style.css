@@ -1,5 +1,3 @@
-@import url("http://fonts.cdnfonts.com/css/sofia-pro");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 img {
   max-width: 100%;
   width: 100%;
@@ -34,10 +32,6 @@ hr {
   padding: 10px;
   z-index: 10;
 }
-.navbar__container .navbar__links--container .navbar__logo {
-  position: relative;
-  left: 1.5rem;
-}
 .navbar__container .navbar__links--container .navbar__links--container-anchor {
   display: flex;
   gap: 2rem;
@@ -52,7 +46,7 @@ hr {
   padding: 2rem 0;
 }
 .navbar__container .navbar__link {
-  font-family: "Poppins", Inter;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -71,7 +65,7 @@ hr {
 }
 
 .cta {
-  font-family: "Poppins", Inter;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   border: 2px solid #242125;
   text-transform: uppercase;
@@ -91,7 +85,7 @@ hr {
 }
 
 .heading__section {
-  font-family: "Sofia Pro", Arial;
+  font-family: "Montserrat", Arial;
   font-size: 2rem;
   font-weight: 300;
   text-align: start;
@@ -104,17 +98,17 @@ hr {
 
 .paragraph {
   font-size: 1.15rem;
-  font-family: "Poppins", Inter;
+  font-family: "Poppins", sans-serif;
   text-align: start;
   word-break: break-word;
   color: #242125;
 }
 
 .section__title {
-  font-family: "Sofia Pro", Arial;
+  font-family: "Montserrat", Arial;
   font-size: 3rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   text-align: start;
   word-break: break-word;
 }
@@ -128,7 +122,7 @@ hr {
 }
 
 .section__title--subtitle {
-  font-family: "Poppins", Inter;
+  font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   word-break: break-word;
@@ -159,8 +153,12 @@ hr {
 }
 @media screen and (max-width: 599px) {
   .collection__container {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
   }
+}
+.collection__container .collection__heading--logo {
+  fill: rgb(168, 168, 168);
+  max-width: 125px;
 }
 .collection__container .collection__copy {
   display: flex;
@@ -175,10 +173,11 @@ hr {
   .collection__container .collection__copy {
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: flex-end;
   }
 }
 .collection__container .collection__copy .collection__title {
-  font-family: "Sofia Pro", Arial;
+  font-family: "Montserrat", Arial;
   font-weight: 100;
   max-width: 480px;
   font-size: 3.25rem;
@@ -189,7 +188,7 @@ hr {
   }
 }
 .collection__container .collection__copy .collection__more {
-  font-family: "Sofia Pro", Arial;
+  font-family: "Montserrat", Arial;
   font-size: 1.5rem;
   font-weight: 100;
   text-transform: uppercase;
@@ -206,32 +205,67 @@ hr {
 .collection__container .collection__copy .collection__more:hover {
   border-bottom: 2px solid #ccc;
 }
-.collection__container .collection__carrousel--container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+.collection__container .collection__slider--layout {
+  display: contents;
 }
-@media screen and (max-width: 599px) {
-  .collection__container .collection__carrousel--container {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .collection__container .collection__slider--layout {
+    display: none;
   }
 }
-.collection__container .collection__carrousel--container .img__item--carrousel {
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .collection__container .collection__slider--layout {
+    display: none;
+  }
+}
+.collection__container .collection__slider--layout .collection__slider--container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  filter: grayscale(0.15);
+  overflow-x: scroll;
+}
+.collection__container .collection__slider--layout .collection__slider--container .collection__slider--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200px;
+}
+.collection__container .collection__images--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 959px) {
+  .collection__container .collection__images--wrapper {
+    display: none;
+  }
+}
+.collection__container .collection__images--wrapper .collection__carrousel--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-height: 360px;
+}
+.collection__container .collection__images--wrapper .collection__carrousel--container .img__item--carrousel {
+  height: 360px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: -webkit-fill-available;
   aspect-ratio: 0.75;
   filter: grayscale(0.5);
 }
-.collection__container .collection__carrousel--container .img__brand--header {
+.collection__container .collection__images--wrapper .collection__carrousel--container .img__item--position {
+  -o-object-position: top;
+     object-position: top;
+}
+.collection__container .collection__images--wrapper .collection__carrousel--container .img__brand--header {
   max-width: 30rem;
   border-radius: 20rem;
   padding: 8px;
   border: 2px solid #fcf7e7;
 }
-.collection__container .collection__carrousel--container .collection__button--slider {
+.collection__container .collection__images--wrapper .collection__button--slider {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -256,8 +290,11 @@ hr {
 }
 .brand__container .img__brand--header {
   max-width: 25rem;
+  min-height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 2px solid #acc999;
-  padding: 0.5rem;
+  padding: 0.25rem;
   border-radius: 20rem;
 }
 @media screen and (max-width: 599px) {
@@ -277,6 +314,12 @@ hr {
   }
 }
 
+.hero__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1rem;
+}
 .img__carrousel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

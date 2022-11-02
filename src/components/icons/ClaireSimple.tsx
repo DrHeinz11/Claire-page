@@ -3,6 +3,7 @@ import React from "react";
 const ClaireSimple = ({ props }: any) => {
   return (
     <svg
+    className="collection__heading--logo"
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"

@@ -13,11 +13,13 @@
   }
   .img__brand--header {
     max-width: 25rem;
+    min-height: 22rem;
+    object-fit: cover;
     border: 2px solid #acc999;
-    padding: 0.5rem;
+    padding: 0.25rem;
     border-radius: 20rem;
     @include lt-sm {
-      max-width:15rem;
+      max-width: 15rem;
     }
   }
   .brand__copy {
