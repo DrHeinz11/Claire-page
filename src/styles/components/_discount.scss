@@ -15,7 +15,7 @@
     color: #fff;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.75);
-    @include md {
+    @include gt-sm {
       align-items: flex-start;
       text-align: start;
       background-color: rgba(0, 0, 0, 0.5);
@@ -42,11 +42,12 @@
       font-family: $font-body;
       font-weight: 400;
       font-size: 1.25rem;
-      max-width: 300px;
+      max-width: 350px;
     }
   }
   .discount__button {
     color: #fff;
     border-color: #fff;
+    min-width: 300px;
   }
 }

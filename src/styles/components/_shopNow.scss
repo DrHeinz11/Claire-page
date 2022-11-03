@@ -1,0 +1,36 @@
+.shopnow__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: rgb(131, 131, 131);
+  align-items: flex-start;
+  @include lt-sm {
+    margin:1rem;
+  }
+  .claire__logo {
+    max-width: 250px;
+  }
+  .shopnow__copy--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 350px;
+    .shopnow__copy--title {
+      text-transform: uppercase;
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 1.75rem;
+    }
+    .shopnow__copy--paragraph {
+      font-family: $font-body;
+      font-size: 1rem;
+    }
+  }
+  .shopnow__button {
+    min-width: 200px;
+    align-self: center;
+  }
+}
