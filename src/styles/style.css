@@ -551,7 +551,9 @@ hr {
   }
 }
 .shopnow__container .claire__logo {
-  max-width: 250px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
 }
 .shopnow__container .shopnow__copy--container {
   display: flex;

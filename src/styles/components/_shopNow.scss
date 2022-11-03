@@ -8,10 +8,12 @@
   background-color: rgb(131, 131, 131);
   align-items: flex-start;
   @include lt-sm {
-    margin:1rem;
+    margin: 1rem;
   }
   .claire__logo {
-    max-width: 250px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
   }
   .shopnow__copy--container {
     display: flex;
