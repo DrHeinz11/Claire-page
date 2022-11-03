@@ -380,6 +380,7 @@ hr {
 }
 @media screen and (max-width: 599px) {
   .gift__container .gift__copy {
+    background-color: rgba(0, 0, 0, 0.75);
     gap: 1rem;
     padding: 1rem;
   }
@@ -387,16 +388,33 @@ hr {
 .gift__container .gift__copy .gift__heading--sub {
   font-weight: 300;
   font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 599px) {
+  .gift__container .gift__copy .gift__heading--sub {
+    font-size: 1rem;
+  }
 }
 .gift__container .gift__copy .gift__heading--title {
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 500;
   font-family: "Montserrat", Arial;
+}
+@media screen and (max-width: 599px) {
+  .gift__container .gift__copy .gift__heading--title {
+    font-size: 3rem;
+  }
 }
 .gift__container .gift__copy .gift__copy--paragraph {
   max-width: 50rem;
   font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
   text-transform: capitalize;
+}
+@media screen and (max-width: 599px) {
+  .gift__container .gift__copy .gift__copy--paragraph {
+    font-size: 1rem;
+  }
 }
 .gift__container .gift__copy .gift__button {
   min-width: 25rem;
@@ -409,6 +427,61 @@ hr {
   }
 }
 
+.discount__container {
+  background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22193013/TWICE-Jeongyeon-3.jpg);
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.discount__container .discount__copy--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .discount__container .discount__copy--container {
+    align-items: flex-start;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.discount__container .discount__copy--container .discount__copy--info {
+  font-family: "Montserrat", Arial;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.discount__container .discount__copy--container .discount__copy--subtitle {
+  text-transform: uppercase;
+}
+.discount__container .discount__copy--container .discount__copy--title {
+  font-size: 2.5rem;
+  font-family: "Montserrat", Arial;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.discount__container .discount__copy--container .discount__copy--title--bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.discount__container .discount__copy--container .discount__copy--paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  max-width: 300px;
+}
+.discount__container .discount__button {
+  color: #fff;
+  border-color: #fff;
+}
+
 .fashion__card {
   display: flex;
   flex-direction: column;
@@ -417,6 +490,11 @@ hr {
   width: 100%;
   min-height: 14rem;
   padding: 0.5rem;
+}
+@media screen and (max-width: 599px) {
+  .fashion__card {
+    padding: 2rem;
+  }
 }
 .fashion__card .fashion__card--img {
   aspect-ratio: 1/1;

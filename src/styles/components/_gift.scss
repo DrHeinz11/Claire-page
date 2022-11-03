@@ -19,22 +19,34 @@
     text-transform: uppercase;
     height: 100%;
     @include lt-sm {
+      background-color: rgba(0, 0, 0, 0.75);
       gap: 1rem;
       padding: 1rem;
     }
     .gift__heading--sub {
       font-weight: 300;
       font-family: $font-body;
+      font-size: 1.5rem;
+      @include lt-sm {
+        font-size: 1rem;
+      }
     }
     .gift__heading--title {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 500;
       font-family: $font-heading;
+      @include lt-sm {
+        font-size: 3rem;
+      }
     }
     .gift__copy--paragraph {
       max-width: 50rem;
       font-family: $font-body;
+      font-size: 1.25rem;
       text-transform: capitalize;
+      @include lt-sm {
+        font-size: 1rem;
+      }
     }
     .gift__button {
       @include lt-sm {

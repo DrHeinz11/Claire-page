@@ -5,7 +5,7 @@ type Props = {}
 
 const NewCollectionBrands = (props: Props) => {
   return (
-    <HeadingHash paramsRoute='Fashion' />
+   <div className="">NewCollectionBrands</div>
   )
 }
 
