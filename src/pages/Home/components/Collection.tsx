@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useRef, useState,useEffect } from 'react'
 import ClaireSimple from '../../../components/icons/ClaireSimple'
 import { dataCarrousel } from '../../../constant/dataCarrousel'
 
