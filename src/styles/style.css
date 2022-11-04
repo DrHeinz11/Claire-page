@@ -70,19 +70,39 @@ hr {
   font-size: 1rem;
   border: 2px solid #242125;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   background-color: transparent;
+  padding: 0.5rem;
+  text-decoration: none;
+  min-width: 135px;
+  cursor: pointer;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
 }
 .cta:hover {
   background-color: #242125;
   color: #fff;
   transition: 0.25s;
+}
+
+.cta__seeAll {
+  font-family: "Montserrat", Arial;
+  font-size: 1rem;
+  color: #000;
+  max-width: 175px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 1rem;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+.cta__seeAll:hover {
+  background-color: rgb(224, 224, 224);
 }
 
 .heading__section {
@@ -125,6 +145,24 @@ hr {
   }
 }
 
+.heading__box--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 2rem 1rem;
+  background: rgb(248, 248, 248);
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 24px solid #000;
+  position: relative;
+}
+.heading__box--container .heading--box {
+  position: absolute;
+  top: -2rem;
+}
+
 .paragraph {
   font-size: 1.15rem;
   font-family: "Poppins", sans-serif;
@@ -162,7 +200,6 @@ hr {
 .main__container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   max-width: 100%;
   width: 100%;
 }
@@ -203,7 +240,7 @@ hr {
 .collection__container .collection__copy .collection__title {
   font-family: "Montserrat", Arial;
   font-weight: 100;
-  max-width: 480px;
+  max-width: 500px;
   font-size: 3.25rem;
 }
 @media screen and (max-width: 599px) {
@@ -527,6 +564,8 @@ hr {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
 }
 .fashion__container .fashion__card--container {
   display: grid;
@@ -574,6 +613,23 @@ hr {
 .shopnow__container .shopnow__button {
   min-width: 200px;
   align-self: center;
+}
+
+.article__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.article__container .article__picture--container .picture__img {
+  transform: scale(0.95);
+  aspect-ratio: 1/1;
+  max-width: 500px;
+  transition: transform 300ms ease;
+  cursor: pointer;
+}
+.article__container .article__picture--container .picture__img:hover {
+  transform: scale(1);
 }
 
 .img__carrousel {

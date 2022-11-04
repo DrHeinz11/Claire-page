@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { HeadingBox, SeeAll } from '../../../../components'
 import HeadingHash from '../../../../components/HeadingHash/HeadingHash'
 import FashionCard from './FashionCard'
 
@@ -7,10 +8,12 @@ const dataCard = [{ imgUrl: 'https://cdn.mos.cms.futurecdn.net/aPn7g2NxvFGyeFV7V
 const Fashion: FC = () => {
     return (
         <div className="fashion__container">
-            <HeadingHash paramsRoute='Fashion' />
+            <HeadingBox route='/fashion/all' section='fashion' >
             <div className="fashion__card--container">
-                {dataCard.map(element => <FashionCard imgUrl={element.imgUrl} imgAlt={element.imgAlt} copyTitle={element.copyTitle} key={element.id} />)}
+                {dataCard.map(element => <FashionCard imgUrl={element.imgUrl} imgAlt={element.imgAlt} copyTitle={element.copyTitle} key={element.id} route={element.imgAlt} />)}
             </div>
+            <SeeAll route='/123' title='see all' />
+            </HeadingBox>
         </div>
     )
 }

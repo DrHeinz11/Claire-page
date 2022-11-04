@@ -1,6 +1,6 @@
-import { useRef, useState,useEffect } from 'react'
-import ClaireSimple from '../../../components/icons/ClaireSimple'
-import { dataCarrousel } from '../../../constant/dataCarrousel'
+import { useRef, useState, useEffect } from 'react'
+import ClaireSimple from '../../../../components/icons/ClaireSimple'
+import { dataCarrousel } from '../../../../constant/dataCarrousel'
 
 type InitialState = { init: number, last: number }
 type Props = {}
@@ -43,7 +43,7 @@ const Collection = (props: Props) => {
       <div className="collection__slider--layout">
 
         <div className="collection__slider--container">
-          {dataCarrousel.map(element => <img className="collection__slider--img" alt={element.imgAlt} src={element.imgUrl} />)}
+          {dataCarrousel.map((element, index) => <img key={element.imgAlt} className="collection__slider--img" alt={element.imgAlt} src={element.imgUrl} />)}
         </div>
 
       </div>
