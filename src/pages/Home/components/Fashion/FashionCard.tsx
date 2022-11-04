@@ -1,5 +1,7 @@
 import { FC } from 'react'
 import { Link } from 'wouter'
+import MiddleHash from '../../../../components/MiddleHash'
+
 
 type FashionData = {
     imgUrl: string
@@ -14,8 +16,8 @@ const FashionCard: FC<FashionData> = ({ imgUrl, imgAlt, copyTitle, route }) => {
             <div className="fashion__card">
                 <img src={imgUrl} alt={imgAlt} className="fashion__card--img" />
                 <div className="fashion__copy--container">
-                    <span className="fashion__middle--hash"></span>
-                    <h3 className="fashion__copy--title">{copyTitle}</h3>
+                    <MiddleHash/>
+                        <h3 className="fashion__copy--title">{copyTitle}</h3>
                 </div>
             </div>
         </Link>

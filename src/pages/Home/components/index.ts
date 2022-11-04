@@ -1,7 +1,10 @@
 export { default as Brand } from './Brand';
 export { default as Collection } from './Collection/Collection';
 export { default as Discount } from './Discount';
+export { default as Fashion } from './Fashion/Fashion';
+export { default as FashionCard } from './Fashion/FashionCard';
 export { default as Gift } from './Gift';
 export { default as Hero } from './Hero';
 export { default as NewCollectionBrands } from './NewCollectionBrands';
 export { default as ShopNow } from './ShopNow';
+export * from './index';

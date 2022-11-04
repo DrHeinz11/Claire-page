@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Link } from 'wouter'
+import MiddleHash from './MiddleHash'
 import SeeAll from './SeeAll.cta'
 
 type Article = { imgUrl: string, imgAlt: string, heading: string, paragraph: string, route: string }
@@ -14,10 +15,11 @@ const Article: FC<Article> = ({ imgUrl, imgAlt, heading, paragraph, route }) => 
                 </picture>
             </Link>
             <div className="article__copy--container">
+                <MiddleHash />
                 <h4 className="article__copy--title">{heading}</h4>
                 <p className="article__copy--paragraph">{paragraph}</p>
+                <SeeAll className="article__copy--cta" route={route} title="read more" />
             </div>
-            <SeeAll route={route} title="read more" />
         </article>
     )
 }

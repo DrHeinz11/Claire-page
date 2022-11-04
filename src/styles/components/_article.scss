@@ -1,8 +1,11 @@
 .article__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
+  width: 100%;
   .article__picture--container {
     .picture__img {
       transform: scale(0.95);
@@ -12,6 +15,32 @@
       cursor: pointer;
       &:hover {
         transform: scale(1);
+      }
+    }
+  }
+  .article__copy--container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 550px;
+    flex:1 0 270px;
+    @include gt-sm {
+      flex: 1 0 300px;
+      gap: 1.5rem;
+    }
+    .article__copy--title {
+      font-family: $font-heading;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      @include gt-sm {
+        font-size: 2rem;
+      }
+    }
+    .article__copy--paragraph {
+      font-family: $font-body;
+      line-height: 110%;
+      @include gt-sm {
+        font-size: 1.15rem;
       }
     }
   }

@@ -1,6 +1,5 @@
 import { FC } from 'react'
-import { Brand, Collection, Discount, Gift, Hero, NewCollectionBrands, ShopNow } from "./components"
-import Fashion from './components/Fashion/Fashion'
+import {Fashion ,Brand, Collection, Discount, Gift, Hero, NewCollectionBrands, ShopNow } from "./components"
 
 const Home: FC = () => {
   return (
@@ -13,8 +12,8 @@ const Home: FC = () => {
         <Collection />
         <Gift />
         <Fashion />
-        <NewCollectionBrands />
         < Discount />
+        <NewCollectionBrands />
         < ShopNow />
       </main>
     </>
