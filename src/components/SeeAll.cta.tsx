@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Link } from 'wouter'
-type Route = { route: string, title: string, className: string }
+type Route = { route: string, title: string, className?: string }
 const SeeAll: FC<Route> = ({ route, title, className }) => {
     return (
         <Link to={route}>
