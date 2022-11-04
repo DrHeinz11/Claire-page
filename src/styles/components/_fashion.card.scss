@@ -6,11 +6,14 @@
   width: 100%;
   min-height: 14rem;
   padding: 0.5rem;
+  cursor: pointer;
   @include lt-sm {
     padding: 2rem;
   }
   .fashion__card--img {
     aspect-ratio: 1/1;
+    transition: transform 300ms ease;
+    cursor: pointer;
     &:hover {
       transform: scale(0.95);
     }

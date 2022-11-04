@@ -71,7 +71,8 @@ hr {
   border: 2px solid #242125;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
+  font-weight: 300;
+  color: #000;
   background-color: transparent;
   padding: 0.5rem;
   text-decoration: none;
@@ -86,16 +87,21 @@ hr {
   color: #fff;
   transition: 0.25s;
 }
+@media screen and (min-width: 960px) {
+  .cta {
+    font-size: 1.25rem;
+  }
+}
 
 .cta__seeAll {
-  font-family: "Montserrat", Arial;
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   color: #000;
   max-width: 175px;
   text-transform: uppercase;
   font-weight: 700;
   background-color: transparent;
-  padding: 1rem;
+  padding: 1rem 1.25rem;
   text-decoration: underline;
   text-align: center;
   cursor: pointer;
@@ -134,10 +140,10 @@ hr {
 .heading__hash--container .heading__hash--title {
   color: #000;
   font-family: "Montserrat", Arial;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 @media screen and (max-width: 959px) {
   .heading__hash--container .heading__hash--title {
@@ -529,6 +535,7 @@ hr {
   width: 100%;
   min-height: 14rem;
   padding: 0.5rem;
+  cursor: pointer;
 }
 @media screen and (max-width: 599px) {
   .fashion__card {
@@ -537,6 +544,8 @@ hr {
 }
 .fashion__card .fashion__card--img {
   aspect-ratio: 1/1;
+  transition: transform 300ms ease;
+  cursor: pointer;
 }
 .fashion__card .fashion__card--img:hover {
   transform: scale(0.95);

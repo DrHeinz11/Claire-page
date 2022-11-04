@@ -11,16 +11,17 @@ type FashionData = {
 }
 
 const FashionCard: FC<FashionData> = ({ imgUrl, imgAlt, copyTitle, route }) => {
-    return (
+    return (<>
         <Link to={route}>
             <div className="fashion__card">
                 <img src={imgUrl} alt={imgAlt} className="fashion__card--img" />
                 <div className="fashion__copy--container">
-                    <MiddleHash/>
-                        <h3 className="fashion__copy--title">{copyTitle}</h3>
+                    <MiddleHash />
+                    <h3 className="fashion__copy--title">{copyTitle}</h3>
                 </div>
             </div>
         </Link>
+    </>
     )
 }
 
