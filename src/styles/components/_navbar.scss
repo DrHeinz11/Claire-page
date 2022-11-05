@@ -1,16 +1,24 @@
 .navbar__container {
   display: flex;
   gap: 2rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  @include gt-sm {
+    justify-content: space-between;
+  }
   .img__navbar--header {
     position: absolute;
     object-fit: cover;
     object-position: center 20rem;
     height: 50rem;
-    max-width: 40rem;
     border-radius: 0 0 22rem 22rem;
     z-index: 1;
+    max-width: 40rem;
+    @include gt-sm {
+      object-position: center 20rem;
+      right: 0;
+      max-width: 38rem;
+    }
   }
   .navbar__links--container {
     width: 100%;
