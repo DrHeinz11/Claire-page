@@ -4,7 +4,7 @@ import { Fashion, Brand, Collection, Discount, Gift, Hero, ShopNow, CareerAdvice
 const Home: FC = () => {
   return (
     <main className='main__container'>
-      <section>
+      <section className='hero__section'>
         <Hero />
       </section>
       <Brand />

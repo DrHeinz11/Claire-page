@@ -401,11 +401,19 @@ hr {
   }
 }
 
-.hero__container {
+.hero__section {
+  min-height: 70vh;
+}
+.hero__section .hero__container {
   margin-top: 24rem;
   padding: 0 1rem;
 }
-.hero__container .hero__copy {
+@media screen and (min-width: 960px) {
+  .hero__section .hero__container {
+    margin-top: 8rem;
+  }
+}
+.hero__section .hero__container .hero__copy {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -413,7 +421,7 @@ hr {
   max-width: 50%;
 }
 @media screen and (max-width: 959px) {
-  .hero__container .hero__copy {
+  .hero__section .hero__container .hero__copy {
     max-width: 100%;
   }
 }
