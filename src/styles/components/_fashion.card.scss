@@ -13,6 +13,7 @@
   .fashion__card--img {
     aspect-ratio: 1/1;
     transition: transform 300ms ease;
+    object-fit: cover;
     cursor: pointer;
     &:hover {
       transform: scale(0.95);
@@ -38,7 +39,10 @@
   gap: 1rem;
   flex-direction: column;
   align-items: center;
-  margin: 2rem 1rem;
+  margin: 3rem 0.15rem;
+  @include gt-sm {
+    margin: 3rem 0;
+  }
   .fashion__card--container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

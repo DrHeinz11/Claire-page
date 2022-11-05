@@ -1,22 +1,20 @@
 import { FC } from 'react'
-import {Fashion ,Brand, Collection, Discount, Gift, Hero, NewCollectionBrands, ShopNow } from "./components"
+import { Fashion, Brand, Collection, Discount, Gift, Hero, ShopNow, CareerAdvice } from "./components"
 
 const Home: FC = () => {
   return (
-    <>
-      <header>
+    <main className='main__container'>
+      <section>
         <Hero />
-      </header>
-      <main className='main__container'>
-        <Brand />
-        <Collection />
-        <Gift />
-        <Fashion />
-        < Discount />
-        <NewCollectionBrands />
-        < ShopNow />
-      </main>
-    </>
+      </section>
+      <Brand />
+      <Collection />
+      <Gift />
+      <Fashion />
+      < Discount />
+      <CareerAdvice />
+      < ShopNow />
+    </main>
   )
 }
 

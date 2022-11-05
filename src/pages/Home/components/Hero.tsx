@@ -4,7 +4,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="hero__container">
+    <header className="hero__container">
       <div className="hero__copy">
         <h3 className="hero__info section__title--subtitle">collection 2022</h3>
         <h1 className="hero__title section__title">new product arrived</h1>
@@ -19,7 +19,7 @@ const Hero = (props: Props) => {
         <span className="button__carrousel"></span>
         <span className="button__carrousel"></span>
       </div>
-    </div>
+    </header>
   );
 };
 
