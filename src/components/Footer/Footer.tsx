@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Link } from 'wouter'
-import { HandleScrollTop } from '../../utils/handleScrollTop'
+import { handleScrollTop } from '../../utils/HandleScrollTop'
 import ClaireLogo from '../icons/ClaireLogo'
 import LinksColums from './components/LinksColums'
 import Newsletter from './components/Newsletter/Newsletter'
@@ -8,7 +8,7 @@ import Newsletter from './components/Newsletter/Newsletter'
 const Footer: FC = () => {
   return (
     <footer className="footer__container">
-      <Link onClick={HandleScrollTop} href='/'>
+      <Link onClick={handleScrollTop} href='/'>
         <a className="claire__logo">
           <ClaireLogo />
         </a>

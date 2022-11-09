@@ -1,4 +1,5 @@
-import { handleScrollTop } from "../types/type";
 
-export const HandleScrollTop: handleScrollTop = () =>
+
+export const handleScrollTop: () => void = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+};
