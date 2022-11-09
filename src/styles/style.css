@@ -720,6 +720,113 @@ hr {
   align-self: center;
 }
 
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 4rem 2rem 0.5rem 2rem;
+  gap: 2rem;
+  background-color: #141414;
+  min-height: 35vh;
+  color: #fff;
+}
+.footer__container .links__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 350px;
+  flex: 1 1 220px;
+}
+.footer__container .links__container .links__column--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__container .links__container .links__column--container .links__column--heading {
+  color: rgb(214, 214, 214);
+  text-transform: uppercase;
+}
+.footer__container .links__container .links__column--container .footer__links {
+  font-size: 1rem;
+  padding: 0.35rem 0;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.footer__container .links__container .links__column--container .footer__links:hover {
+  border-bottom: 1px solid #fff;
+}
+.footer__container .newsletter__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 450px;
+}
+.footer__container .newsletter__container .newsletter__form--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__container .newsletter__container .newsletter__form--container .newsletter__label--text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 100%;
+  font-size: 1.1rem;
+}
+.footer__container .newsletter__container .newsletter__form--container .newsletter__label--text input {
+  padding: 10px;
+  font-size: 1rem;
+}
+.footer__container .newsletter__container .newsletter__form--container .newsletter__label--text input:focus-within {
+  outline: 0;
+}
+.footer__container .newsletter__container .newsletter__form--container .newsletter__label--checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+.footer__container .newsletter__container .newsletter__form--container .newsletter__label--checkbox input {
+  width: 18px;
+}
+.footer__container .newsletter__container .cta {
+  background-color: #fff;
+}
+.footer__container .newsletter__container .cta:hover {
+  background-color: #5c5c5c;
+  color: #fafafa;
+}
+.footer__container .claire__logo {
+  color: #fff;
+  width: 18rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.footer__container .footer__divider {
+  width: 100%;
+  height: 1px;
+  background-color: #fafafa;
+}
+.footer__container .footer__copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+.footer__container .footer__copyright .footer__copyright--link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__container .footer__copyright .footer__copyright--link:hover {
+  text-decoration: underline;
+}
+
 .img__carrousel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

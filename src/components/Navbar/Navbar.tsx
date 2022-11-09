@@ -2,6 +2,8 @@ import { FC, useState } from "react";
 import NavigationLink from "./components/NavigationLink";
 import { TfiMenuAlt } from "react-icons/tfi";
 import ClaireSimple from "../icons/ClaireSimple";
+import { HandleScrollTop } from "../../utils/handleScrollTop";
+import { Link } from "wouter";
 
 const Navbar: FC = () => {
   const [focus, setFocus] = useState(false);
@@ -27,9 +29,11 @@ const Navbar: FC = () => {
             </nav>
           )}
         </>
-        <a href="#" className="navbar__logo">
-          <ClaireSimple props={{ width: '100px' }} />
-        </a>
+        <Link href="/" onClick={HandleScrollTop} className="navbar__logo">
+          <a>
+            <ClaireSimple props={{ width: '100px' }} />
+          </a>
+        </Link>
 
         <nav className="navbar__button--container" >
           <button style={{ display: "none" }} className="cta">

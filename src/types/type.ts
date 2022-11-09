@@ -8,3 +8,8 @@ export type DataCarrer = Array<{
   heading: string;
   paragraph: string;
 }>;
+
+export type footerLinks = { route: string; title: string };
+export type FooterData = Array<{ heading: string; links: Array<footerLinks> }>;
+
+export type handleScrollTop = () => void;
