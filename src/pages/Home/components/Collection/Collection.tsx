@@ -1,37 +1,13 @@
-import { useRef, useState, useEffect } from 'react'
+import { FC, useState } from 'react'
 import ClaireSimple from '../../../../components/icons/ClaireSimple'
 import { dataCarrousel } from '../../../../constant/dataCarrousel'
+import { handleSlices } from '../../../../utils/handleSlices'
 
-type InitialState = { init: number, last: number }
-type Props = {}
+const Collection: FC = () => {
+  const [slice, setSlice] = useState<{ init: number, last: number }>({ init: 0, last: 4 })
 
-const Collection = (props: Props) => {
-  const carrouselReference = useRef()
-  const [slice, setSlice] = useState<InitialState>({ init: 0, last: 4 })
   const dataSlice = dataCarrousel.slice(slice.init, slice.last)
-  const handleSlices = (action: string) => {
-    action === 'prev' && setSlice((prev) => {
-      if (prev.init <= 0 || prev.last <= 4) {
-        console.log({ init: dataCarrousel.length - 4, last: dataCarrousel.length })
-        return { init: dataCarrousel.length - 4, last: dataCarrousel.length }
-      }
-      console.log({ init: prev.init - 4, last: prev.last - 4 })
-      return { init: prev.init - 4, last: prev.last - 4 }
-    })
 
-    action === 'next' && setSlice((prev) => {
-      if (prev.last >= dataCarrousel.length) {
-        return { init: 0, last: 4 }
-      }
-      return { init: prev.init + 4, last: prev.last + 4 }
-    })
-  }
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     handleSlices('next')
-  //   }, 6000)
-  //   return () => clearInterval(interval)
-  // }, [])
   return (
     <section className="collection__container ">
       <ClaireSimple />
@@ -53,8 +29,8 @@ const Collection = (props: Props) => {
           {dataSlice.map((element) => <img className={`img__item--carrousel ${element.imgAlt === 'Fromis9-collection-22' || element.imgAlt === 'Fromis9-collection-23' ? 'img__item--position' : ''} `} src={element.imgUrl} alt={element.imgAlt} key={element.imgAlt} />)}
         </div >
         <div className="collection__button--slider">
-          <button className="img__carrousel--cta" onClick={() => handleSlices('prev')}>{`<`}</button>
-          <button className="img__carrousel--cta" onClick={() => handleSlices('next')}>{`>`}</button>
+          <button className="img__carrousel--cta" onClick={() => handleSlices({ action: 'prev', setter: setSlice, data: dataCarrousel })}>{`<`}</button>
+          <button className="img__carrousel--cta" onClick={() => handleSlices({ action: 'next', setter: setSlice, data: dataCarrousel })}>{`>`}</button>
         </div>
       </div>
     </section >
