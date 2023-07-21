@@ -1,10 +1,10 @@
 .hero__section {
   min-height: 70vh;
   .hero__container {
-    margin-top: 24rem;
+    // margin-top: 24rem;
     padding: 0 1rem;
     @include gt-sm {
-      margin-top: 8rem;
+      // margin-top: 8rem;
     }
     .hero__copy {
       display: flex;

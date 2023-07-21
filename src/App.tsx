@@ -5,7 +5,7 @@ import "./styles/style.css";
 
 function App() {
   return (
-    <div className="App">
+    <div id="App">
       <Navbar />
       <>
         <Home />

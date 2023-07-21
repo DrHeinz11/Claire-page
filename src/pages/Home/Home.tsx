@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { Fashion, Brand, Collection, Discount, Gift, Hero, ShopNow, CareerAdvice } from "./components"
+import Carousel from '../../components/Carrousel/CarrouselContianer'
 
 const Home: FC = () => {
   return (

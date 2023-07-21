@@ -28,10 +28,11 @@ $primary-gray: #9997a2;
 @import "./components/middleHash";
 @import "./components/see.all";
 @import "./components/footer";
+@import "./components/carrousel";
 
 
 //pages
-
+@import "./pages/home";
 //layout
 
 @import "./layout/imgCarrousel";
