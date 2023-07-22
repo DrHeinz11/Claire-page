@@ -3,6 +3,7 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  position: relative;
   @include gt-sm {
     justify-content: space-between;
   }
@@ -10,10 +11,13 @@
     position: absolute;
     object-fit: cover;
     object-position: center 20rem;
-    height: 50rem;
+    height: 75rem;
     border-radius: 0 0 22rem 22rem;
     z-index: 1;
     max-width: 40rem;
+    @include xs{
+      height: 50rem;
+    }
     @include gt-sm {
       object-position: center 20rem;
       right: 0;
@@ -40,7 +44,7 @@
       left: 0;
       background-color: #ccc;
       width: 100%;
-      min-height: 100vh;
+      // min-height: 100vh;
       padding: 2rem 0;
     }
   }

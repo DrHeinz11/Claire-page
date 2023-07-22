@@ -5,7 +5,7 @@
   padding: 10rem 3rem;
   background-color: #000;
   @include lt-sm {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
   .collection__heading--logo {
     fill: rgb(247, 247, 247);

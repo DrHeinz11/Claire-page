@@ -12,6 +12,7 @@ hr {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 @media screen and (min-width: 960px) {
   .navbar__container {
@@ -24,10 +25,15 @@ hr {
      object-fit: cover;
   -o-object-position: center 20rem;
      object-position: center 20rem;
-  height: 50rem;
+  height: 75rem;
   border-radius: 0 0 22rem 22rem;
   z-index: 1;
   max-width: 40rem;
+}
+@media screen and (max-width: 599px) {
+  .navbar__container .img__navbar--header {
+    height: 50rem;
+  }
 }
 @media screen and (min-width: 960px) {
   .navbar__container .img__navbar--header {
@@ -56,7 +62,6 @@ hr {
   left: 0;
   background-color: #ccc;
   width: 100%;
-  min-height: 100vh;
   padding: 2rem 0;
 }
 .navbar__container .navbar__link {
@@ -238,7 +243,7 @@ hr {
 }
 @media screen and (max-width: 599px) {
   .collection__container {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
   }
 }
 .collection__container .collection__heading--logo {
@@ -363,7 +368,6 @@ hr {
   gap: 5rem;
   padding: 0.5rem 1rem;
   max-width: 100%;
-  min-height: 100vh;
   margin: 6rem 0;
 }
 @media screen and (max-width: 599px) {
@@ -398,11 +402,14 @@ hr {
   }
 }
 
-.hero__section {
-  min-height: 70vh;
-}
 .hero__section .hero__container {
+  margin-top: 0;
   padding: 0 1rem;
+}
+@media screen and (max-width: 599px) {
+  .hero__section .hero__container {
+    margin-top: 24rem;
+  }
 }
 .hero__section .hero__container .hero__copy {
   display: flex;
@@ -418,7 +425,6 @@ hr {
 }
 .gift__container {
   background-image: url(https://0.soompi.io/wp-content/uploads/2019/10/22220737/twice-jeongyeon-61.jpg);
-  height: 100vh;
   background-size: cover;
   background-position: center center;
 }
@@ -494,7 +500,6 @@ hr {
   background-position: 50%;
   background-size: cover;
   width: 100%;
-  height: 100vh;
 }
 .discount__container .discount__copy--container {
   display: flex;
@@ -551,7 +556,6 @@ hr {
   gap: 1rem;
   align-items: center;
   width: 100%;
-  min-height: 14rem;
   padding: 0.5rem;
   cursor: pointer;
 }
@@ -719,7 +723,7 @@ hr {
   padding: 4rem 2rem 0.5rem 2rem;
   gap: 2rem;
   background-color: #141414;
-  min-height: 35vh;
+  font-family: "Montserrat", Arial;
   color: #fff;
 }
 .footer__container .links__container {
@@ -747,6 +751,7 @@ hr {
   text-transform: capitalize;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  font-family: "Poppins", sans-serif;
 }
 .footer__container .links__container .links__column--container .footer__links:hover {
   border-bottom: 1px solid #fff;
@@ -820,10 +825,11 @@ hr {
 .carousel__wrap {
   align-items: center;
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   position: relative;
-  width: 80%;
+  width: 90%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -831,7 +837,8 @@ hr {
 .carousel__inner {
   height: 40rem;
   position: relative;
-  width: calc(90rem);
+  width: 100%;
+  overflow: hidden;
 }
 
 .carousel__container {
@@ -845,6 +852,7 @@ hr {
   height: 100%;
   left: 50%;
   list-style-type: none;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -899,10 +907,8 @@ hr {
 }
 
 .carousel-slide-item__body {
-  bottom: -2.5rem;
-  height: 10%;
-  position: absolute;
   font-family: "Montserrat", Arial;
+  text-align: center;
   color: white;
 }
 .carousel-slide-item__body h4 {
@@ -923,22 +929,50 @@ hr {
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
+.carousel__btn--container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 115%;
+  top: 0;
+  left: -5rem;
+  bottom: 10rem;
+  right: 0;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.carousel__btn--prev {
+@media screen and (max-width: 599px) {
+  .carousel__btn--container {
+    width: 120%;
+    top: 50%;
+    left: -35px;
+    bottom: 0;
+    right: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+  }
+}
+.carousel__btn--container--controler {
+  display: flex;
+  flex-direction: column;
+}
+.carousel__btn--container--prev {
   left: -10rem;
+  padding: 0;
 }
-.carousel__btn--next {
+.carousel__btn--container--next {
   right: -10rem;
+  padding: 0;
 }
 
 .carousel__btn-arrow {
   border: solid rgb(245, 245, 245);
   border-width: 0 0.4rem 0.4rem 0;
-  height: 6rem;
-  width: 6rem;
+  height: 2rem;
+  width: 2rem;
   padding: 3px;
   z-index: 10;
 }
@@ -953,8 +987,13 @@ hr {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 0;
   justify-content: center;
+}
+@media screen and (max-width: 599px) {
+  .carousel__dots {
+    margin-top: 2rem;
+  }
 }
 .carousel__dots .dot {
   background: #ccc;
@@ -973,6 +1012,7 @@ hr {
 
 #App {
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .img__carrousel {

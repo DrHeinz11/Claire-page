@@ -20,3 +20,19 @@ export type dataSlices = {
   setter: React.Dispatch<React.SetStateAction<slices>>;
 };
 export type slices = { init: number; last: number };
+
+export interface Player {
+  title: string;
+  desc: string;
+  image: string;
+}
+
+export interface SlideItem {
+  styles: React.CSSProperties;
+  player: Player | undefined;}
+
+ export interface CarouselSlideItemProps {
+    pos: number;
+    idx: number;
+    activeIdx: number;
+  }

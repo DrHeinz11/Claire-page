@@ -6,7 +6,8 @@
   padding: 4rem 2rem 0.5rem 2rem;
   gap: 2rem;
   background-color: #141414;
-  min-height: 35vh;
+  // min-height: 35vh;
+  font-family: $font-heading;
   color: #fff;
   .links__container {
     display: flex;
@@ -31,6 +32,7 @@
         text-transform: capitalize;
         text-decoration: none;
         border-bottom: 1px solid transparent;
+        font-family: $font-body;
         &:hover {
           border-bottom: 1px solid #fff;
         }
