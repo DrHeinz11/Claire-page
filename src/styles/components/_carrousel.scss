@@ -1,4 +1,4 @@
-$slide-count: 5;
+$slide-count: 8;
 $slide-width: 30rem;
 
 .carousel__wrap {
@@ -169,7 +169,7 @@ $slide-width: 30rem;
 
 .carousel__dots {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
   margin: 0;
   justify-content: center;
@@ -181,11 +181,11 @@ $slide-width: 30rem;
     border: 0;
     border-radius: 50%;
     cursor: pointer;
-    height: 2rem;
+    height: 1rem;
+    width: 1rem;
     margin: 0 0.3rem;
     outline: none;
     transform: scale(0.5);
-    width: 2rem;
 
     &.active {
       background: rgb(78, 78, 78);

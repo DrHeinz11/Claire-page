@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "GeneralSans";
+  src: url("./fonts/GeneralSans-Regular.woff2") format("woff2"), url("./fonts/GeneralSans-Regular.woff") format("woff"), url("./fonts/GeneralSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("./fonts/GeneralSans-Semibold.woff2") format("woff2"), url("./fonts/GeneralSans-Semibold.woff") format("woff"), url("./fonts/GeneralSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url("./fonts/GeneralSans-Light.woff2") format("woff2"), url("./fonts/GeneralSans-Light.woff") format("woff"), url("./fonts/GeneralSans-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
 img {
   max-width: 100%;
   width: 100%;
@@ -5,6 +26,10 @@ img {
 
 hr {
   margin: 1rem 0;
+}
+
+* {
+  font-weight: inherit;
 }
 
 .navbar__container {
@@ -65,7 +90,7 @@ hr {
   padding: 2rem 0;
 }
 .navbar__container .navbar__link {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -84,7 +109,7 @@ hr {
 }
 
 .cta {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1rem;
   border: 2px solid #242125;
   text-transform: uppercase;
@@ -111,7 +136,7 @@ hr {
 }
 
 .cta__seeAll {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1rem;
   color: #000;
   max-width: 175px;
@@ -129,7 +154,7 @@ hr {
 }
 
 .heading__section {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-size: 2rem;
   font-weight: 300;
   text-align: start;
@@ -156,7 +181,7 @@ hr {
 }
 .heading__hash--container .heading__hash--title {
   color: #000;
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
@@ -189,17 +214,17 @@ hr {
 
 .paragraph {
   font-size: 1.15rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   text-align: start;
   word-break: break-word;
   color: #242125;
 }
 
 .section__title {
-  font-family: "Montserrat", Arial;
-  font-size: 3rem;
+  font-family: "GeneralSans", Arial;
+  font-size: 4.5rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   text-align: start;
   word-break: break-word;
 }
@@ -213,7 +238,7 @@ hr {
 }
 
 .section__title--subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
   word-break: break-word;
@@ -267,7 +292,7 @@ hr {
   }
 }
 .collection__container .collection__copy .collection__title {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-weight: 100;
   max-width: 500px;
   font-size: 3.25rem;
@@ -278,7 +303,7 @@ hr {
   }
 }
 .collection__container .collection__copy .collection__more {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-size: 1.5rem;
   font-weight: 100;
   text-transform: uppercase;
@@ -455,7 +480,7 @@ hr {
 }
 .gift__container .gift__copy .gift__heading--sub {
   font-weight: 300;
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1.5rem;
 }
 @media screen and (max-width: 599px) {
@@ -466,7 +491,7 @@ hr {
 .gift__container .gift__copy .gift__heading--title {
   font-size: 4.5rem;
   font-weight: 500;
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
 }
 @media screen and (max-width: 599px) {
   .gift__container .gift__copy .gift__heading--title {
@@ -475,7 +500,7 @@ hr {
 }
 .gift__container .gift__copy .gift__copy--paragraph {
   max-width: 50rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1.25rem;
   text-transform: capitalize;
 }
@@ -521,7 +546,7 @@ hr {
   }
 }
 .discount__container .discount__copy--container .discount__copy--info {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -530,16 +555,16 @@ hr {
 }
 .discount__container .discount__copy--container .discount__copy--title {
   font-size: 2.5rem;
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-weight: 300;
   text-transform: uppercase;
 }
 .discount__container .discount__copy--container .discount__copy--title--bold {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-weight: 600;
 }
 .discount__container .discount__copy--container .discount__copy--paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   max-width: 350px;
@@ -583,7 +608,7 @@ hr {
   text-transform: capitalize;
 }
 .fashion__card .fashion__copy--container .fashion__copy--title {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   word-break: break-word;
   font-weight: 400;
   font-size: 1.5rem;
@@ -635,12 +660,12 @@ hr {
 }
 .shopnow__container .shopnow__copy--container .shopnow__copy--title {
   text-transform: uppercase;
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-weight: 600;
   font-size: 1.75rem;
 }
 .shopnow__container .shopnow__copy--container .shopnow__copy--paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   font-size: 1rem;
 }
 .shopnow__container .shopnow__button {
@@ -686,7 +711,7 @@ hr {
   }
 }
 .article__container .article__copy--container .article__copy--title {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   font-size: 1.5rem;
   text-transform: capitalize;
 }
@@ -696,7 +721,7 @@ hr {
   }
 }
 .article__container .article__copy--container .article__copy--paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
   line-height: 110%;
 }
 @media screen and (min-width: 960px) {
@@ -723,7 +748,7 @@ hr {
   padding: 4rem 2rem 0.5rem 2rem;
   gap: 2rem;
   background-color: #141414;
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   color: #fff;
 }
 .footer__container .links__container {
@@ -751,7 +776,7 @@ hr {
   text-transform: capitalize;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  font-family: "Poppins", sans-serif;
+  font-family: "GeneralSans", sans-serif;
 }
 .footer__container .links__container .links__column--container .footer__links:hover {
   border-bottom: 1px solid #fff;
@@ -857,7 +882,7 @@ hr {
   padding: 0;
   position: absolute;
   transform: translateX(-50%);
-  width: calc(330rem);
+  width: calc(510rem);
 }
 
 .carousel__slide-item {
@@ -890,7 +915,7 @@ hr {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   content: "View Collection";
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -907,7 +932,7 @@ hr {
 }
 
 .carousel-slide-item__body {
-  font-family: "Montserrat", Arial;
+  font-family: "GeneralSans", Arial;
   text-align: center;
   color: white;
 }
@@ -985,7 +1010,7 @@ hr {
 
 .carousel__dots {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   flex-wrap: wrap;
   margin: 0;
   justify-content: center;
@@ -1000,11 +1025,11 @@ hr {
   border: 0;
   border-radius: 50%;
   cursor: pointer;
-  height: 2rem;
+  height: 1rem;
+  width: 1rem;
   margin: 0 0.3rem;
   outline: none;
   transform: scale(0.5);
-  width: 2rem;
 }
 .carousel__dots .dot.active {
   background: rgb(78, 78, 78);
