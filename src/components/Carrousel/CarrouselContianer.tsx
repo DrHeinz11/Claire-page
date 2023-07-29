@@ -33,7 +33,6 @@ const createItem = (position: number, idx: number): SlideItem => {
   return item;
 };
 
-
 const CarouselSlideItem: React.FC<CarouselSlideItemProps> = ({
   pos,
   idx,
@@ -94,48 +93,50 @@ const Carousel = () => {
   }, [items]);
 
   return (
-    <div className="carousel__wrap">
-      {" "}
-      <div className="carousel__inner">
-        <div className="carousel__container">
-          <ul className="carousel__slide-list">
-            {items.map((pos, i) => (
-              <CarouselSlideItem
+    <>
+      <div className="carousel__btn--container">
+        <button
+          className="carousel__btn carousel__btn--prev"
+          onClick={() => prevClick()}
+        >
+          <i className="carousel__btn-arrow carousel__btn-arrow--left" />
+        </button>
+        <button
+          className="carousel__btn carousel__btn--next"
+          onClick={() => nextClick()}
+        >
+          <i className="carousel__btn-arrow carousel__btn-arrow--right" />
+        </button>
+      </div>
+      <div className="carousel__wrap">
+        {" "}
+        <div className="carousel__inner">
+          <div className="carousel__container">
+            <ul className="carousel__slide-list">
+              {items.map((pos, i) => (
+                <CarouselSlideItem
+                  key={i}
+                  idx={i}
+                  pos={pos}
+                  activeIdx={activeIdx}
+                />
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="carousel__btn--controler">
+          <div className="carousel__dots">
+            {items.slice(0, length).map((pos, i) => (
+              <button
                 key={i}
-                idx={i}
-                pos={pos}
-                activeIdx={activeIdx}
+                onClick={() => handleDotClick(i)}
+                className={i === activeIdx ? "dot active" : "dot"}
               />
             ))}
-          </ul>
+          </div>{" "}
         </div>
       </div>
-      <div className="carousel__btn--controler">
-        <div className="carousel__btn--container">
-          <button
-            className="carousel__btn carousel__btn--prev"
-            onClick={() => prevClick()}
-          >
-            <i className="carousel__btn-arrow carousel__btn-arrow--left" />
-          </button>
-          <button
-            className="carousel__btn carousel__btn--next"
-            onClick={() => nextClick()}
-          >
-            <i className="carousel__btn-arrow carousel__btn-arrow--right" />
-          </button>
-        </div>
-        <div className="carousel__dots">
-          {items.slice(0, length).map((pos, i) => (
-            <button
-              key={i}
-              onClick={() => handleDotClick(i)}
-              className={i === activeIdx ? "dot active" : "dot"}
-            />
-          ))}
-        </div>{" "}
-      </div>
-    </div>
+    </>
   );
 };
 export default Carousel;

@@ -10,7 +10,9 @@ const Collection: FC = () => {
         <h2 className="collection__title">new collection in our brands</h2>
         <button className="collection__more">see all</button>
       </div>
-      <Carousel />
+      <div style={{ position: "relative" }}>
+        <Carousel />
+      </div>
     </section>
   );
 };

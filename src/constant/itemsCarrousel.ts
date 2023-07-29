@@ -152,14 +152,14 @@ import { SlideItem } from "../types/type";
         "https://kpopping.com/documents/6d/2/800/fromis-9-for-Marie-Claire-Korea-Magazine-April-2022-Issue-documents-4.jpeg?v=2ab59",
     },
   },
-  {
-    player: {
-      title: "Fromis9-collection-21",
-      desc: "Portada de Marie Claire con Fromis9.",
-      image:
-        "https://kpopping.com/documents/58/3/800/fromis-9-for-Marie-Claire-Korea-Magazine-April-2022-Issue-documents-2(1).jpeg?v=daf87",
-    },
-  },
+  // {
+  //   player: {
+  //     title: "Fromis9-collection-21",
+  //     desc: "Portada de Marie Claire con Fromis9.",
+  //     image:
+  //       "https://kpopping.com/documents/58/3/800/fromis-9-for-Marie-Claire-Korea-Magazine-April-2022-Issue-documents-2(1).jpeg?v=daf87",
+  //   },
+  // },
   {
     player: {
       title: "Fromis9-collection-22",
