@@ -144,15 +144,6 @@ $slide-width-md: 30rem;
     width: 100%;
     bottom: 50%;
     height: fit-content;
-    // @include xs {
-    //   width: 120%;
-    //   top: 50%;
-    //   left: -35px;
-    //   bottom: 0;
-    //   right: 0;
-    //   height: fit-content;
-    //   justify-content: space-between;
-    // }
     &--controler {
       display: flex;
       flex-direction: column;
@@ -168,7 +159,6 @@ $slide-width-md: 30rem;
     }
   }
 }
-
 .carousel__btn-arrow {
   border: solid rgb(245, 245, 245);
   border-width: 0 0.4rem 0.4rem 0;
